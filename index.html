@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="Aya Khan - Legitimerad Tandläkare" />
+        <title>Aya Khan | Tandläkare - Jobbsökande</title>
+        <link rel="icon" href="assets/images/logo.png" type="image/png">
+
+        
+        <!-- Preload important resources -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+        
+        <!-- Other CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-container">
+        <div class="loading-content">
+          <img
+            src="assets/images/loading.gif"
+            alt="Loading animation"
+            class="loading-gif"
+          />
+          <div class="loading-text animate__animated animate__fadeIn">
+            Aia Khan
+          </div>
+          <div
+            class="loading-subtitle animate__animated animate__fadeIn animate__delay-1s"
+          >
+            Framtida Tandläkare
+          </div>
+        </div>
+      </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-navbar">
+      <div class="container">
+        <a href="index.html"
+        ><img src="assets/images/logo.png" alt="website logo" class="logo"
+      /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Om mig</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Kompetenser</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Utbildning & Erfarenhet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-animation"></div>
+        <div class="particles" id="particles-js"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-title"> <!-- Removed animate__ classes -->
+                        <span class="text-gradient">Dr. Aia Khan</span>
+                    </h1>
+                    <div class="typewriter"> <!-- Removed animate__ classes -->
+                        <h2 class="hero-subtitle" id="typewriter-text"></h2>
+                    </div>
+                    <div class="hero-buttons"> <!-- Removed animate__ classes -->
+                        <a href="#contact" class="btn btn-primary btn-glow pulse-animate"
+                            >Kontakta mig</a
+                        >
+                        <a href="assets/pdf/Aya_Khan_CV.pdf" class="btn btn-outline-light btn-glow pulse-animate" id="downloadCV" download="Aya_Khan_CV.pdf"
+                            >Ladda ner CV</a
+                        >
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="hero-image-container"> <!-- Removed animate__ classes -->
+                        <img
+                            src="assets/images/profile.png"
+                            alt="Aia Khan"
+                            class="hero-img floating"
+                        />
+                        <div class="hero-img-decoration"></div>
+                        <div class="hero-img-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down" id="scrollDownArrow"> <!-- Removed animate__ classes -->
+            <span class="scroll-text">Scrolla ner</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title text-center">Om mig</h2> <!-- Removed animate__ classes -->
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0"> <!-- Removed animate__ classes -->
+          <div class="about-img-container">
+            <img src="assets/images/profile 1.jpg" alt="Aia Khan" class="img-fluid about-img" />
+            <div class="about-img-border"></div>
+          </div>
+        </div>
+        <div class="col-lg-7"> <!-- Removed animate__ classes -->
+          <h3 class="mb-4 animate-charcter">Legitimerad tandläkare med internationell examen</h3>
+          <p> <!-- Removed animate__ classes -->
+            Jag är en engagerad och noggrann tandläkare med klinisk erfarenhet
+            från både Sverige och utlandet. Jag har en stark drivkraft för att
+            erbjuda patientcentrerad vård och arbeta förebyggande för bättre
+            munhälsa.
+          </p>
+          <p> <!-- Removed animate__ classes -->
+            Min vision är att bidra till en trygg, tillgänglig och kvalitativ
+            tandvård där varje patient känner sig sedd, hörd och omhändertagen
+            - oavsett bakgrund eller ålder.
+          </p>
+          <div class="about-highlights mt-4">
+            <div class="highlight-item"> <!-- Removed animate__ classes -->
+              <i class="fas fa-graduation-cap"></i>
+              <span> Legitimerad tandläkare i Sverige</span>
+            </div>
+            <div class="highlight-item"> <!-- Removed animate__ classes -->
+              <i class="fas fa-language"></i>
+              <span> Flytande i Svenska, Engelska och Arabiska</span>
+            </div>
+            <div class="highlight-item"> <!-- Removed animate__ classes -->
+              <i class="fas fa-map-marker-alt"></i>
+              <span> Bosatt i Karlskrona, flexibel för arbete i hela landet</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+          <h2 class="section-title text-center">Mina Kompetenser</h2> <!-- Removed animate__ classes -->
+          <p class="text-center mb-5"> <!-- Removed animate__ classes -->
+            Färdigheter och kvalifikationer jag för med mig till framtida
+            arbetsgivare
+          </p>
+      
+          <div class="row">
+            <div class="col-md-6 mb-4"> <!-- Removed animate__ classes -->
+              <div class="skill-category">
+                <h4><i class="fas fa-tooth me-2"></i>Kliniska färdigheter</h4>
+                <ul class="skill-list">
+                  <li>Basal diagnostik och behandlingsplanering</li>
+                  <li>Kariesbehandling och fyllningstekniker</li>
+                  <li>Parodontologisk grundbehandling</li>
+                  <li>Enkel extraktionsteknik</li>
+                  <li>Preventiv tandvård och munhygieninstruktion</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4"> <!-- Removed animate__ classes -->
+              <div class="skill-category">
+                <h4>
+                    <i class="fas fa-laptop-medical me-2"></i>Tekniska färdigheter
+                </h4>
+                <ul class="skill-list">
+                  <li>Tandvårdsjournalprogram (Alma)</li>
+                  <li>Digital röntgen </li>
+                  <li>Intraoral scanning</li>
+                  <li>Microsoft Office</li>
+                  <li>Grundläggande digital teknik och bildhantering</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4"> <!-- Removed animate__ classes -->
+              <div class="skill-category">
+                <h4><i class="fas fa-users me-2"></i>Personliga egenskaper</h4>
+                <ul class="skill-list">
+                  <li>Utmärkt patientkommunikation</li>
+                  <li>Teamorienterad och samarbetsvillig</li>
+                  <li>Pedagogisk och tålmodig</li>
+                  <li>Problemlösningsorienterad</li>
+                  <li>Kreativ och detaljorienterad</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4"> <!-- Removed animate__ classes -->
+              <div class="skill-category">
+                <h4>
+                    <i class="fas fa-user-md me-2"></i>Patientfokuserad Vård
+                </h4>
+                <ul class="skill-list">
+                  <li>Förebyggande tandvård och hälsoupplysning</li>
+                  <li>Skapar trygg och personlig upplevelse för varje patient</li>
+                  <li>Bygger förtroende genom empati och kommunikation</li>
+                  <li>Erfarenhet av patienter med tandvårdsrädsla</li>
+                  <li>Skräddarsyr behandlingsplaner för varje patient</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Education & Experience Section -->
+    <section id="education" class="education-section">
+      <div class="container">
+        <h2 class="section-title text-center">Utbildning & Erfarenhet</h2>
+        <p class="text-center mb-5">
+          Min akademiska bakgrund och praktiska erfarenheter
+        </p>
+
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                  <h4>Teoretiskt och praktiskt delprov för tandläkare</h4>
+                  <h5>Karolinska Institutet, Sverige</h5>
+                  <p class="text-muted">Sep 2024 - Jun 2025</p>
+                  <p>Teoretiskt delprov för tandläkare, Betyg: G. Kunskapsprov för tandläkare, praktisk del, Betyg: G.</p>
+                </div>
+              </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h4>Tandvårdspersonal med praktisk utbildning</h4>
+              <h5>Friska Tänder Klinik</h5>
+              <p class="text-muted">Jan 2025 - Maj 2025</p>
+              <p>Assisterade vid undersökningar, behandlingar och patientmottagningar. Fick praktisk erfarenhet inom kariesbehandling, röntgen och sterilhantering. Arbetade nära erfarna tandläkare och fick inblick i svensk tandvård i praktiken.</p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h4>Svenska som främmande språk: Nivå 1-8</h4>
+              <h5>Lunds Universitet, Sverige</h5>
+              <p class="text-muted">2024 - 2025</p>
+              <p>Behörighetsgivande kurs (C1)</p>
+            </div>
+          </div>
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h4>Masterexamen i Folkhälsa</h4>
+              <h5>Debrecen Universitet, Ungern</h5>
+              <p class="text-muted">Sep 2022 - Dec 2024</p>
+              <p>Thesis: "Prevalence of work-related musculoskeletal disorders among dentists in Syria"</p>
+            </div>
+          </div>
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h4>Assisterande vid kirurgiska ingrepp</h4>
+              <h5>Damaskus Universitetssjukhus för oral- och maxillofacial kirurgi</h5>
+              <p class="text-muted">Jan 2022 - Jul 2022</p>
+              <p>Assisterade vid kirurgiska ingrepp och behandlade patienter inom oral och maxillofacial kirurgi. Utförde pre- och postoperativ vård samt övervakade patienternas återhämtning. Förvärvade färdigheter i att dokumentera och hantera patientinformation i en klinisk miljö.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item right">
+            <div class="timeline-content">
+              <h4>Klinisk erfarenhet inom tandvård</h4>
+              <h5>Damaskus Universitets Kliniker</h5>
+              <p class="text-muted">Mar 2019 - Dec 2021</p>
+              <p>Erfarenhet av kliniskt arbete inom olika områden av tandvård, inklusive diagnostik och behandling av patienter.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item left">
+            <div class="timeline-content">
+              <h4>Kandidatexamen i odontologi</h4>
+              <h5>Damaskus Universitet, Syrien</h5>
+              <p class="text-muted">Okt 2016 - Dec 2021</p>
+              <p>Sammanlagt betyg: 81,32</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+          <h2 class="section-title text-center">Kontakta mig</h2> <!-- Removed animate__ classes -->
+          <p class="text-center mb-5"> <!-- Removed animate__ classes -->
+            Intresserad av att diskutera praktikmöjligheter eller framtida
+            anställning? Kontakta mig gärna!
+          </p>
+          <div class="row">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <div class="contact-info glass-box"> <!-- Removed animate__ classes -->
+                <h3 class="mb-4">Kontaktinformation</h3>
+                <p>
+                  <i class="fas fa-map-marker-alt contact-icon"></i> Karlskrona,
+                  Sverige
+                </p>
+                <p><i class="fas fa-phone contact-icon"></i> +46-703005244</p>
+                <p>
+                  <i class="fas fa-envelope contact-icon"></i>
+                  Ayakhan9898@gmail.com
+                </p>
+                <p>
+                  <i class="fas fa-calendar-alt contact-icon"></i> Tillgänglig för
+                  anställning från juni 2025
+                </p>
+      
+                <div class="mt-5">
+                  <h4 class="mb-3">Referenser</h4>
+                  <p>Referenser lämnas på begäran efter initial kontakt.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="glass-box p-4"> <!-- Removed animate__ classes -->
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Ditt namn"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder="Din e-post"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      placeholder="Ämne"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      placeholder="Meddelande"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary pulse-animate">
+                    Skicka meddelande
+                  </button>
+                  <div id="formMessage" class="mt-3" style="display: none;"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h4 class="text-white mb-4">Aia Khan</h4>
+            <p>
+              Tandläkare med passion för patientcentrerad vård och
+              kontinuerlig lärande.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <h4 class="text-white mb-4">Följ mig</h4>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/aia-khan-1ba058287/" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=100012444256871" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-4 bg-light" />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">
+              &copy; 2025 Aya Khan. Alla rättigheter reserverade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add Particles.js library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <!-- EmailJS for form submission -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
